@@ -195,3 +195,11 @@ h1, h2, h3 {
 .like { border: none; background: none; font-size: 1.4rem; color: #bbb; cursor: pointer; }
 
 .state-empty { display: none; color: #fff; }
+
+.board.is-empty + .state-empty {
+    display: block;
+}
+
+.like.liked {
+    color: crimson;
+}

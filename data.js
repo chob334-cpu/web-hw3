@@ -4,9 +4,9 @@ const movies = [
   { title: "인셉션", year: 2010, date: "2010-07-21", rating: 8.4, audience: 0, poster: "/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg", type: "mine", rank: null, overview: "줄거리 내용..."},
   { title: "어바웃 타임", year: 2013, date: "2013-12-05", rating: 7.9, audience: 0, poster: "/iR6022C3hN9qI8Z1xX461P7D71t.jpg", type: "mine", rank: null, overview: "줄거리 내용..."},
   { title: "라라랜드", year: 2016, date: "2016-12-07", rating: 7.9, audience: 0, poster: "/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg", type: "mine", rank: null, overview: "줄거리 내용..."},
-  { title: "서울의 봄", year: 2023, date: "2023-11-22", rating: 9.1, audience: 13128419, poster: "/5137887.jpg", type: "boxoffice", rank: 1, overview: "줄거리 내용..."},
-  { title: "파묘", year: 2024, date: "2024-02-22", rating: 8.4, audience: 11914784, poster: "/8832912.jpg", type: "boxoffice", rank: 2, overview: "줄거리 내용..."},
-  { title: "범죄도시4", year: 2024, date: "2024-04-24", rating: 7.6, audience: 11502779, poster: "/2291823.jpg", type: "boxoffice", rank: 3, overview: "줄거리 내용..."},
+  { title: "서울의 봄", year: 2023, date: "2023-11-22", rating: 9.1, audience: 13128419, poster: "/ukVVnY9ovwl78WE5KndcpA6SnAm.jpg", type: "boxoffice", rank: 1, overview: "줄거리 내용: 박 대통령의 암살 이후, 계엄령이 선포된다. 국군보안사령관 전두광과 그를 따르는 장교들에 의해 쿠데타가 일어나고 군대가 정치적 행동을 해선 안된다고 믿는 완고한 군인인, 수도방위사령관 이태신은 전두광을 막기 위해 그와 맞서기로 한다. 그들의 갈등이 점차 심화되고, 대혼란 속에서 모두가 갈망하던 서울의 봄은 예상치 못한 방향으로 흘러간다."},
+  { title: "파묘", year: 2024, date: "2024-02-22", rating: 8.4, audience: 11914784, poster: "/tw0i3kkmOTjDjGFZTLHKhoeXVvA.jpg", type: "boxoffice", rank: 2, overview: "줄거리 내용: 미국 LA, 거액의 의뢰를 받은 무당 화림과 봉길은 기이한 병이 대물림되는 집안의 장손을 만난다. 조상의 묫자리가 화근임을 알아챈 화림은 이장을 권하고, 돈 냄새를 맡은 최고의 풍수사 상덕과 장의사 영근이 합류한다. 절대 사람이 묻힐 수 없는 악지에 자리한 기이한 묘. 상덕은 불길한 기운을 느끼고 제안을 거절하지만, 화림의 설득으로 결국 파묘가 시작되고… 나와서는 안될 것이 나왔다."},
+  { title: "범죄도시4", year: 2024, date: "2024-04-24", rating: 7.6, audience: 11502779, poster: "/jucHQwnRSma1O9V2bM007e4eSd7.jpg", type: "boxoffice", rank: 3, overview: "줄거리 내용: 신종 마약 사건 3년 뒤, 괴물형사 마석도와 서울 광수대는 배달앱을 이용한 마약 판매 사건을 수사하던 중 수배 중인 앱 개발자가 필리핀에서 사망한 사건이 대규모 온라인 불법 도박 조직과 연관되어 있음을 알아낸다."},
   { title: "인사이드 아웃 2", year: 2024, date: "2024-06-12", rating: 8.9, audience: 8799013, poster: "/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg", type: "boxoffice", rank: 4, overview: "줄거리 내용..."},
-  { title: "베테랑2", year: 2024, date: "2024-09-13", rating: 7.8, audience: 7525339, poster: "/9918273.jpg", type: "boxoffice", rank: 5, overview: "줄거리 내용..."}
+  { title: "베테랑2", year: 2024, date: "2024-09-13", rating: 7.8, audience: 7525339, poster: "/akqfhtM1Wa1klFi7ijmyNm7Sm1j.jpg", type: "boxoffice", rank: 5, overview: "줄거리 내용: 가족들도 못 챙기고 밤낮 없이 범죄들과 싸우는 베테랑 형사 서도철과 강력범죄수사대 형사들. 어느 날, 한 교수의 죽음이 이전에 발생했던 살인 사건들과 연관성이 있는 것으로 밝혀지며 전국은 연쇄살인범으로 인해 떠들썩해진다."}
 ];
