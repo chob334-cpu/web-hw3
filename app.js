@@ -132,3 +132,30 @@ function openDetail(title) {
 document.getElementById("closeDetail").addEventListener("click", () => {
     dialog.close();
 });
+
+// searchTMDB : 검색어 => TMDB 검색 결과 5건
+async function searchTMDB(keyword) {
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=${KEYS.TMDB_KEY}&language=ko-KR&query=${encodeURIComponent(keyword)}`;
+    const res = await fetch(url);
+    const data = await res.json();
+
+    return data.results.slice(0, 5).map((r) => ({
+        title: r.title,
+        year: r.release_date ? Number(r.release_date.slice(0, 4)) : 0,
+        date: r.release_date || "",
+        rating: Math.round(r.vote_average * 10) / 10,
+        poster: r.poster_path,
+        overview: r.overview || "줄거리 정보가 없습니다.",
+        type: "tmdb",
+        rank: null
+    }));
+}
+
+document.getElementById("q").addEventListener("keydown", async (e) => {
+    if (e.key === "Enter") {
+        const keyword = e.target.value.trim();
+        if (!keyword) return;
+        const results = await searchTMDB(keyword);
+        renderCards(results);
+    }
+});
