@@ -111,7 +111,7 @@ function openDetail(title) {
 
     const posterHtml = m.poster === null
         ? `<div class="poster-fallback">${m.title[0]}</div>`
-        : `<img src="${posterUrl(m.poster, "w342")}" alt="${m.title} 포스터">`;
+        : `<img src="${posterUrl(m.poster, "w500")}" alt="${m.title} 포스터">`;
 
     const extraInfo = m.type === "boxoffice"
         ? `<p>박스오피스 ${m.rank}위 · 누적 관객 ${m.audience.toLocaleString()}명</p>`
