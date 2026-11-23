@@ -203,3 +203,41 @@ h1, h2, h3 {
 .like.liked {
     color: crimson;
 }
+
+.poster-fallback {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    background: #2c3e50;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: var(--font-title);
+}
+
+dialog#detail {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    max-width: 600px;
+    width: 90%;
+    padding: 20px;
+}
+
+dialog#detail::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#detailBody {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+#detailBody img {
+    width: 100%;
+    border-radius: 8px;
+}

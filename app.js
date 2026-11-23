@@ -100,4 +100,35 @@ document.querySelector(".board").addEventListener("click", (e) => {
         refresh();
         return;
     }
+    openDetail(title);
+});
+
+const dialog = document.getElementById("detail");
+
+function openDetail(title) {
+    const m = movies.find((item) => item.title === title);
+    if (!m) return;
+
+    const posterHtml = m.poster === null
+        ? `<div class="poster-fallback">${m.title[0]}</div>`
+        : `<img src="${posterUrl(m.poster, "w342")}" alt="${m.title} 포스터">`;
+
+    const extraInfo = m.type === "boxoffice"
+        ? `<p>박스오피스 ${m.rank}위 · 누적 관객 ${m.audience.toLocaleString()}명</p>`
+        : "";
+
+    document.getElementById("detailBody").innerHTML = `
+        ${posterHtml}
+        <div>
+            <h2>${m.title} (${m.year})</h2>
+            <p>개봉일: ${m.date} · 평점: ★ ${m.rating}</p>
+            ${extraInfo}
+            <p>${m.overview}</p>
+        </div>
+    `;
+    dialog.showModal();
+}
+
+document.getElementById("closeDetail").addEventListener("click", () => {
+    dialog.close();
 });
