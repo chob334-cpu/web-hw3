@@ -20,15 +20,13 @@ const posterUrl = (path, size) => {
 }
 
 function renderCards(list) {
-    const card = document.createElement("article");
-    card.className = "card";
-    card.setAttribute("data-type", m.type);
-    card.setAttribute("data-title", m.title);
     const board = document.querySelector(".board");
     board.innerHTML = "";
     for (const m of list) {
         const card = document.createElement("article");
         card.className = "card";
+        card.setAttribute("data-type", m.type);
+        card.setAttribute("data-title", m.title);
         if (m.rating >= 8) {
             card.classList.add("hot");
         }
